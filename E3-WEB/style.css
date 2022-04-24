@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --body: #252422;
+    --texto:#fffcf2;
+    --organge:#eb5e28;
+    --texto2: #aaa69f;
+}
+
+body{
+    background: var(--body);
+}
+body::-webkit-scrollbar {
+    width: 4px; 
+    height: 8px; 
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(235, 94, 40,0.5); 
+    border-radius: 4px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+    color: var(--texto);
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+nav ul li{
+    cursor: pointer;
+}
+nav ul li:hover{
+    color:var(--organge)
+}
+.icon{
+    display: flex;
+    gap: 3px;    
+}
+.icon p{
+    border: solid 1px var(--organge);
+    padding: 3px;
+    width: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    color: var(--texto);
+}
+.icon p:hover{
+    background: var(--organge);
+}
+.section1{
+    display: flex;
+    margin: 0 70px;
+}
+.img-perfil{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+
+}
+.img-perfil img{
+    width: 350px;
+    border-radius: 10px;
+    position: relative;
+}
+.img-marco{
+    position: absolute;
+    border: 3px var(--organge) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 320px;
+    bottom: 140px;
+    right: 180px;
+}
+.img-transparente{
+    background: var(--organge);
+    opacity: 0.4;
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+}
+.Sobre-Mi{
+    margin-top: 50px;
+}
+.Sobre-Mi p{
+    margin-top: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--organge);
+}
+.Sobre-Mi h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    color: var(--texto);
+    margin-bottom: 15px;
+}
+.Sobre-Mi h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: var(--texto2);
+}
+a{
+    font-family: 'Roboto Mono', monospace;
+    color: var(--organge);
+    border: 1px solid var(--organge);
+    padding: 10px 30px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.boton{
+    background: var(--organge);
+    color: var(--texto);
+}
+.boton:hover{
+    background-color: #e4531a;
+}
+.boton2:hover{
+    background-color: rgb(235, 94, 40);
+    background-color: rgba(235, 94, 40,0.1);  
+}
+.section2{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    color: var(--texto);
+    margin-bottom: 30px;
+}
+.section2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin:40px;
+    color: var(--texto2);
+}
